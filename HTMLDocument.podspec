@@ -31,6 +31,9 @@ Pod::Spec.new do |s|
   s.source_files = '*.{h,m}'
   s.public_header_files = '*.h'
 
+  s.library = 'xml2'
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
+
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
