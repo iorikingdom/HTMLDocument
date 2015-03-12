@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.osx.platform = :osx, "10.7"
   s.requires_arc = true
 
-  s.source_files = '*.m'
+  s.source_files = '*.{h,m}'
   s.public_header_files = '*.h'
 
   # s.frameworks = 'UIKit', 'MapKit'
